@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .search-form {
+            text-align: right;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        ul li a {
+            padding: 5px;
+            color: white;
+            background-color: skyblue;
+            text-decoration: none;
+            margin-right: 1px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: red;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a {
+            display: block;
+            padding: 5px 10px;
+            color: green;
+            text-decoration: none;
+        }
+        .dropdown-content a:hover {
+            background-color: pink;
+        }
+        .container {
+            padding: 20px;
+        }
+        h2 {
+            color: darkblue;
+            text-align: center;
+        }
+        h3 {
+            color: darkgreen;
+            margin-top: 20px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: pink;
+        }
+        .marquee {
+            display: block;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: marquee 15s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <!-- Search Form -->
+    <form class="search-form" role="search" action="search.php">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="query">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+    <ul>
+
+        <img src="logo platform.JFIF" alt="Logo" height="50" width="50">
+        <!-- Navigation Links -->
+        <li style="display: inline; margin-right: 1px;"><a href="./HOME.html" style="padding: 1px; color: white; background-color: skyblue; text-decoration: none; margin-right: 1px;">HOME</a></li>
+        <li style="display: inline; margin-right: 1px;"><a href="./CONTACT.html" style="padding: 1px; color: white; background-color: skyblue; text-decoration: none; margin-right: 1px;">CONTACT</a></li>
+        <li style="display: inline; margin-right: 1px;"><a href="./ABOUT.html" style="padding: 1px; color: white; background-color: skyblue; text-decoration: none; margin-right: 1px;">ABOUT</a></li>
+
+        <li style="display: inline; margin-right: 1px;"><a href="./appointments.php" style="padding: 1px; color: white; background-color: skyblue; text-decoration: none; margin-right: 1px;">appointments</a></li>
+        <li style="display: inline; margin-right: 1px;"><a href="./availability.php" style="padding: 1px; color: white; background-color: skyblue; text-decoration: none; margin-right: 1px;">availability</a></li>
+        <li style="display: inline; margin-right: 1px;"><a href="./clients.php" style="padding: 1px; color: white; background-color: skyblue; text-decoration: none; margin-right: 1px;">clients</a></li>
+        <li style="display: inline; margin-right: 1px;"><a href="./counselors.php" style="padding: 1px; color: white; background-color: skyblue; text-decoration: none; margin-right: 1px;">counselors</a></li>
+        <li style="display: inline; margin-right: 1px;"><a href="./payments.php" style="padding: 1px; color: white; background-color: skyblue; text-decoration: none; margin-right: 1px;">payments</a></li>
+         <li style="display: inline; margin-right: 1px;"><a href="./profiles.php" style="padding: 1px; color: white; background-color: skyblue; text-decoration: none; margin-right: 1px;">profiles</a></li>
+        <li style="display: inline; margin-right: 1px;"><a href="./progressnotes.php" style="padding: 1px; color: white; background-color: skyblue; text-decoration: none; margin-right: 1px;">progressnotes</a></li>
+         <li style="display: inline; margin-right: 1px;"><a href="./reviews.php" style="padding: 1px; color: white; background-color: skyblue; text-decoration: none; margin-right: 1px;">reviews</a></li>
+         <li style="display: inline; margin-right: 1px;"><a href="./sessions.php" style="padding: 1px; color: white; background-color: skyblue; text-decoration: none; margin-right: 1px;">sessions</a></li>
+        <!-- Dropdown Settings Menu -->
+        <li class="dropdown">
+            <a href="#">SETTINGS</a>
+            <div class="dropdown-content">
+                <a href="register.html" style="background-color: green;">Register</a>
+                <a href="login.html" style="background-color: yellow;">Login</a>
+                <a href="logout.php" style="background-color: blue;">Logout</a>
+            </div>
+        </li>
+    </ul>
+</header>
+<div class="container">
+    <h2>About Us</h2>
+    
+    <h3>1. Our Mission</h3>
+    <p>At URUMURI COUNSELORS, our mission is to provide compassionate, professional, and accessible relationship counseling to individuals and couples seeking to strengthen their connections and improve their emotional well-being. We believe that healthy relationships are the foundation of a happy and fulfilling life, and we are committed to helping you navigate your journey with empathy and expertise.</p>
+    
+    <h3>2. Who We Are</h3>
+    <p>URUMURI COUNSELORS is a dedicated team of licensed therapists, counselors, and relationship experts with years of experience in guiding people through various relationship challenges. Our professionals are trained in diverse therapeutic approaches and are passionate about helping you find clarity, resolve conflicts, and build stronger, healthier relationships.</p>
+    
+    <h3>3. What We Offer</h3>
+    <p><strong>Personalized Counseling:</strong> Tailored sessions that address your unique relationship dynamics and challenges.</p>
+    <p><strong>Couples Therapy:</strong> Guidance and support for couples at any stage of their relationship, whether you're dating, engaged, married, or considering separation.</p>
+    <p><strong>Workshops and Webinars:</strong> Interactive sessions on communication skills, conflict resolution, intimacy, and more.</p>
+    <p><strong>Resource Library:</strong> A comprehensive collection of articles, videos, and tools designed to support your ongoing relationship journey.</p>
+    
+    <h3>4. Why Choose Us</h3>
+    <p><strong>Confidential and Secure:</strong> Your privacy is our priority. We use the latest technology to ensure that all your information and communications are secure and confidential.</p>
+    <p><strong>Flexible Scheduling:</strong> Access our services from the comfort of your home, with flexible scheduling options to fit your busy lifestyle.</p>
+    <p><strong>Expert Guidance:</strong> Benefit from the insights and strategies of seasoned professionals who are committed to your relationship's success.</p>
+    <p><strong>Evidence-Based Practices:</strong> Our approaches are grounded in the latest research and best practices in relationship counseling and psychology.</p>
+    
+    <h3>5. Our Values</h3>
+    <p><strong>Empathy:</strong> We listen with compassion and understanding, honoring your feelings and experiences.</p>
+    <p><strong>Integrity:</strong> We uphold the highest standards of professionalism and ethical practice in all our interactions.</p>
+    <p><strong>Inclusivity:</strong> We welcome individuals and couples of all backgrounds, orientations, and identities.</p>
+    <p><strong>Growth:</strong> We believe in the potential for positive change and are dedicated to helping you achieve your relationship goals.</p>
+    
+    <h3>6. Our Story</h3>
+    <p>Founded in 2019, URUMURI COUNSELORS was born out of a desire to make quality relationship counseling more accessible to everyone. Recognizing the challenges many face in finding time for in-person therapy, we created a platform that brings expert counseling to you, wherever you are. Since our inception, we have helped thousands of individuals and couples build stronger, more meaningful connections.</p>
+    
+    <h3>7. Get in Touch</h3>
+    <p>We’re here to help you take the first step towards a healthier, happier relationship. Contact us today to learn more about our services or to schedule your first session.</p>
+</div>
+
+<footer>
+    <span class="marquee"><i style="color: yellow;">&copy; 2024</i><i style="color: blue;"><b>WEB TECHNOLOGY CAT DESIGNED BY: MUGISHA Eliab</b></span>
+</footer>
+</body>
+</html>
